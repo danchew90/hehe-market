@@ -15,7 +15,8 @@ body {
   font-family: BMJUA;
   text-align: center;
   /* padding: 0 5%; */
-  overflow: hidden;
+
+  height: 150%;
 }
 
 h1 {
@@ -59,7 +60,7 @@ a {
 }
 
 #map {
-  margin: 0 auto;
+  margin: 0 auto 50px;
 }
 
 img {
