@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hehe-market</title>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript"
+        src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1vzzzrmd0s"></script>
 </head>
 
 <body>
@@ -37,6 +39,20 @@
             </li>
         </ul>
 
+        <div class="map">
+            <h2>오프라인 매장</h2>
+            <span>인천광역시 부평구 광장로 30 (부평동, 대아지하상가) 대아상가 196호 헤헤마켓</span>
+        </div>
+        <div id="map" style="width:300px;height:300px;"></div>
+
+        <script>
+            var mapOptions = {
+                center: new naver.maps.LatLng(37.490620647461384, 126.72370322193686),
+                zoom: 10
+            };
+
+            var map = new naver.maps.Map('map', mapOptions);
+        </script>
     </div>
 
 
